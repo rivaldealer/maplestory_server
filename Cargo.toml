@@ -1,6 +1,7 @@
 [package]
 name = "maplestory_server"
 version = "0.1.0"
-authors = ["rival"]
+authors = ["rivaldealer"]
 
 [dependencies]
+rand = "0.3"
