@@ -91,7 +91,7 @@ pub fn send_handshake(mut stream: &TcpStream) {
                         //    println!("{} ", buffer[x]);
                         //}
                         if buffer_bytes == packet_size + HEADER_LEN {
-                            krypto::decrypt(&mut buffer, packet_size, &iv_recv);
+                            krypto::decrypt(&mut buffer, packet_size, iv_recv);
                         }
                     },
                     Err(err) => {
